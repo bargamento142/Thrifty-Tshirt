@@ -26,7 +26,6 @@ public class login {
                 System.out.println("❌ Invalid username.");
                 continue; // ask username again
             }
-
             Map<String, Object> user = users.get(0);
             String storedHash = (String) user.get("password");
             String hashedPassword = dbconnector.hashPassword(password);
